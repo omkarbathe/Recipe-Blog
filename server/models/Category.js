@@ -11,4 +11,8 @@ const categorySchema = new mongoose.Schema({
   },
 });
 
+<<<<<<< HEAD
 module.exports = mongoose.model('Category', categorySchema);
+=======
+module.exports = mongoose.model('Category', categorySchema,'Categories');
+>>>>>>> ff04cec (Fix: Explicitly set collection names for Categories and Recipes)

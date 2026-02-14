@@ -32,4 +32,8 @@ recipeSchema.index({ name: 'text', description: 'text' });
 // WildCard Indexing
 //recipeSchema.index({ "$**" : 'text' });
 
+<<<<<<< HEAD
 module.exports = mongoose.model('Recipe', recipeSchema);
+=======
+module.exports = mongoose.model('Recipe', recipeSchema, 'Recipes');
+>>>>>>> ff04cec (Fix: Explicitly set collection names for Categories and Recipes)

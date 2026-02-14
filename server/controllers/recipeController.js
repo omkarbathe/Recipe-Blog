@@ -19,7 +19,11 @@ exports.homepage = async(req, res) => {
 
     res.render('index', { title: 'Cooking Blog - Home', categories, food } );
   } catch (error) {
+<<<<<<< HEAD
     res.satus(500).send({message: error.message || "Error Occured" });
+=======
+    res.status(500).send({message: error.message || "Error Occured" });
+>>>>>>> ff04cec (Fix: Explicitly set collection names for Categories and Recipes)
   }
 }
 
