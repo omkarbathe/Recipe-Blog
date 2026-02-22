@@ -1,11 +1,7 @@
 const mongoose = require('mongoose');
-<<<<<<< HEAD
-mongoose.connect("mongodb://127.0.0.1:27017/RecipeBlog");
-=======
-mongoose.connect("mongodb://127.0.0.1:27017/recipeblog");
->>>>>>> ff04cec (Fix: Explicitly set collection names for Categories and Recipes)
+mongoose.connect("mongodb://admin:admin123@recipe-db:27017/recipeblog?authSource=admin");
 
-const db = mongoose.connection;
+const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function(){
   console.log('Connected')
